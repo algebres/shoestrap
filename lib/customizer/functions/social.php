@@ -44,37 +44,3 @@ function shoestrap_social_links( $network = '' ) {
   <?php }
 }
 
-/*
- * Alters the content to add social share buttons.
- * The buttons will be on the top, bottom or both of single entries.
- */
-function shoestrap_social_share_singlular( $content ) { 
-  global $post;
-  $social_location = get_theme_mod( 'shoestrap_single_social_position' );
-  $social = '';
-  
-  if( is_singular() && is_main_query() ) {
-    $social = '<div class="shareme clearfix" data-url="' . get_permalink( $post->ID ) . '" data-text="' . get_the_title( $post->ID ) . '"></div>';
-  }
-  if ( $social_location == 'top' ) {
-    return $social . $content;
-  } elseif ( $social_location == 'bottom' ) {
-    return $content . $social;
-  } elseif ( $social_location == 'both' ) {
-    return $social . $content . $social;
-  } else {
-    return $content;
-  }
-}
-add_action( 'the_content', 'shoestrap_social_share_singlular' );
-
-/*
- * Enqueues the sharre script.
- * 
- * For more info on sharre check out http://sharrre.com/
- */
-function shoestrap_theme_enqueue_scripts() {
-  //sharrre, social share 
-  wp_enqueue_script( 'shoestrap-sharrre', get_stylesheet_directory_uri() . '/lib/customizer/sharrre/jquery.sharrre.min.js', false, false, true );
-}
-add_action('wp_enqueue_scripts', 'shoestrap_theme_enqueue_scripts');

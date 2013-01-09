@@ -1,3 +1,4 @@
+<?php if ( current_theme_supports( 'default_comment_form' ) ) { comment_form(); } ?>
 <?php function shoestrap_comment($comment, $args, $depth) {
   $GLOBALS['comment'] = $comment; ?>
   <?php do_action('shoestrap_pre_comment'); ?>

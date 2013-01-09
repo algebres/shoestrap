@@ -17,7 +17,7 @@ function shoestrap_admin_page() {
  */
 function shoestrap_admin_page_content() { ?>
   <div class="wrap">
-    <h2><?php _e( 'Shoestrap Administration Page' ); ?></h2>
+    <h2><?php _e( 'Shoestrap Administration Page', 'shoestrap' ); ?></h2>
     <?php do_action( 'shoestrap_admin_content' ); ?>
   </div>
   <?php
