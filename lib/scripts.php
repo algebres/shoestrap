@@ -22,6 +22,7 @@ function shoestrap_scripts() {
   if ( $shoestrap_responsive != '0' ) {
     wp_enqueue_style('shoestrap_app_responsive', get_template_directory_uri() . '/assets/css/responsive.css', false, null);
   }
+  wp_enqueue_style('elusive_iconfont', get_template_directory_uri() . '/assets/fonts/css/elusive-webfont.css', false, null);
 
   // Load style.css from child theme
   if (is_child_theme()) {
