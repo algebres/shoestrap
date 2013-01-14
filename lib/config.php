@@ -4,12 +4,9 @@
  */
 
 // Enable theme features
-
-add_theme_support('root-relative-urls');    // Enable relative URLs
-add_theme_support('rewrite-urls');          // Enable URL rewrites
-add_theme_support('h5bp-htaccess');         // Enable HTML5 Boilerplate's .htaccess
-add_theme_support('bootstrap-top-navbar');  // Enable Bootstrap's fixed navbar
-add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'bootstrap-top-navbar' );  // Enable Bootstrap's fixed navbar
+add_theme_support( 'automatic-feed-links' );  // Required by WordPress.org
+add_theme_support( 'default_comment_form' );  // Replaces the custom comment form with WordPress's default.
 
 /**
  * Define which pages shouldn't have any sidebars

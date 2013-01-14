@@ -8,7 +8,6 @@ require_once locate_template( '/lib/customizer/functions/controls.php' );     //
 require_once locate_template( '/lib/customizer/functions/extras.php' );       // Extra Functions for the customizer
 require_once locate_template( '/lib/customizer/functions/logo.php' );         // Customizer Logo functions
 require_once locate_template( '/lib/customizer/functions/social.php' );       // Customizer Social functions
-require_once locate_template( '/lib/customizer/functions/login.php' );        // Login screen customizations
 
 // Apply the selected styles:
 require_once locate_template( '/lib/customizer/styles/branding.php' );        // Branding (header) region, containing the logo etc.

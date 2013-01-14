@@ -10,5 +10,3 @@
 </div>
 
 <?php wp_footer(); ?>
-
-<?php do_action('shoestrap_after_footer');

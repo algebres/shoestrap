@@ -1,4 +1,5 @@
-<?php if ( current_theme_supports( 'default_comment_form' ) ) { comment_form(); } ?>
+
+<?php if ( current_theme_supports( 'default_comment_form' ) ) { comment_form(); } else { ?>
 <?php function shoestrap_comment($comment, $args, $depth) {
   $GLOBALS['comment'] = $comment; ?>
   <?php do_action('shoestrap_pre_comment'); ?>
@@ -114,3 +115,4 @@
   </section><!-- /#respond -->
   <?php do_action('shoestrap_after_comment'); ?>
 <?php endif; ?>
+<?php } ?>

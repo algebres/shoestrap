@@ -10,12 +10,10 @@
 
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/modernizr-2.6.2.min.js"></script>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
-
-  <?php wp_head(); ?>
-
   <?php if (wp_count_posts()->publish > 0) : ?>
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
   <?php endif; ?>
+
+  <?php wp_head(); ?>
+
 </head>
