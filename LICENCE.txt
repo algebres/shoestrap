@@ -1,0 +1,8 @@
+The Shoestrap theme is available under the GPL v3 licence.
+See terms and conditions in the included licence-gpl3.txt file.
+
+Bootstrap is licenced under the Apache v2 licence.
+See terms and conditions in the included licence-apache2.txt file.
+
+Modernizr is licenced under the MIT Licence.
+See terms and conditions in the included licence-mit.txt file.
